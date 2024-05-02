@@ -1,0 +1,73 @@
+{
+  "nodes": {
+    "busybox-snapshot-src": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-LU1yHBDoxsst4Qe7rUKTaqpAcyWh/x9XeQt0Js0ROK4=",
+        "type": "file",
+        "url": "https://www.busybox.net/downloads/busybox-snapshot.tar.bz2"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://www.busybox.net/downloads/busybox-snapshot.tar.bz2"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1710146030,
+        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1714686603,
+        "narHash": "sha256-UciMkKKaI/8ctcz1+Qn3IlxM/nvZhR2PJuUgj1WV+qQ=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "32476a46ef66764fcc28cea3c99258c2a5bc7abd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "busybox-snapshot-src": "busybox-snapshot-src",
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

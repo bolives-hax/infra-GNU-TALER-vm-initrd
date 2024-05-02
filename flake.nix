@@ -62,6 +62,7 @@
               mv initrd.cpio.gz $out
             '';
           };
+          default = self.packages.${system}.taler-initrd;
         };
       });
 }
